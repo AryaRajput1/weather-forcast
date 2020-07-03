@@ -9,7 +9,8 @@ const express = require('express');
 const geo = require('./geoweather');
 const getWeather = geo.getWeather;
 const getLocation = geo.getLocation;
-
+//port config
+const port =process.env.PORT||3000;
 //this for start server
 const app = express();
 const path = require('path');
@@ -97,7 +98,7 @@ app.get('/help', (req, res) => {
 
 
 //this for listen or start server
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('connect to localhost server');
 });
 

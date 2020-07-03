@@ -8,7 +8,7 @@ e.preventDefault();
 datasec.innerHTML='loading....';
 formm.innerHTML='';
 locations.innerHTML='';
-const url=`http://localhost:3000/product/?addresss=${inp.value}`;
+const url=`/product/?addresss=${inp.value}`;
 console.log('submit');
 
 fetch(url).then((response)=>{
